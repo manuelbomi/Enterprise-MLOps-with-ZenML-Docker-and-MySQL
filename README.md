@@ -397,6 +397,64 @@ zenml stack set aws_stack
 
 ---  
 
+### <ins>7. Security and Multi-User Access</ins>
+
+##### Supports user authentication and team collaboration.
+
+##### Why enterprises care:
+
+- Enterprise environments require controlled access.
+
+- ZenML supports user authentication, API tokens, and RBAC (role-based access).
+
+##### The project feature:
+
+- Authenticates users via the ZenML web login flow.
+- 
+-  Demonstrates replacing zenml-server → localhost for network bridging between host and container.
+
+---
+
+### <ins> 8. Business Impact Summary </ins>
+
+| Business Need | How This Project Solves It |
+|---------------|----------------------------|
+| Model reproducibility | Docker-based environment ensures consistent builds |
+| Pipeline governance | ZenML tracks artifacts, runs, and metrics |
+| Multi-user collaboration | MySQL-backed server allows shared metadata |
+| Experiment management | Dashboard provides run comparisons |
+| Easy deployment | Docker Compose encapsulates all services |
+| Scalability | ZenML's stack concept enables cloud migration |
+| Security | Server authentication and credential isolation |
+
+---
+
+### <ins> 9. Real-World Enterprise Use Cases</ins>
+
+| Industry | Application Example |
+|----------|---------------------|
+| 🏦 Finance | Credit risk scoring pipeline using ZenML orchestrator |
+| 🏥 Healthcare | Predictive patient diagnosis with auditable ML runs |
+| 🚚 Logistics | IoT data analytics using ZenML with Dask backend |
+| 🏭 Manufacturing | Predictive maintenance models tracked via ZenML |
+| 💳 Retail | Customer churn prediction pipelines |
+
+---
+
+### <ins> 10. MLOps Principles Demonstrated </ins>
+
+| MLOps Pillar | How This Project Demonstrates It |
+|--------------|----------------------------------|
+| Automation | Pipelines defined declaratively in ZenML |
+| Reproducibility | Docker ensures same environment everywhere |
+| Versioning | Runs, data, and models tracked via ZenML |
+| Scalability | Pluggable architecture enables cloud scaling |
+| Monitoring | Metrics logged and visualized in dashboard |
+| Collaboration | Central server + database for team access |
+
+--- 
+
+
 
 
 
