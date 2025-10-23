@@ -1,8 +1,46 @@
-# ZenML Demo Project (Docker + VSCode)
+# Enterprise MLOps with ZenML, Docker, and MySQL (End-to-End Machine Learning Pipeline for the Iris Dataset)
 
-This demo provides a minimal, runnable ZenML project that:
-* Starts a MySQL database and a ZenML server (dashboard) using Docker Compose.
-* Provides an `app` image containing a small sklearn pipeline that can be run and tracked by ZenML.
+## Project Overview
+
+#### This project demonstrates an end-to-end MLOps workflow using:
+
+- Docker for reproducible environments
+
+- ZenML for pipeline orchestration and experiment tracking
+
+-  MySQL as ZenML’s metadata store
+
+- Scikit-learn for model training and evaluation
+
+- Pandas for data handling
+
+---
+
+### Project Structure
+
+```python
+zenml_demo_project/
+├── docker-compose.yml
+├── Dockerfile
+├── requirements.txt
+├── .env
+├── README.md
+└── app/
+    ├── .zen/                     # ZenML local repo configuration (auto-created)
+    ├── src/
+    │   └── pipeline.py           # ZenML pipeline definition and entrypoint
+    │
+    ├── Dockerfile
+    ├── requirements.txt
+    ├── run_pipeline.sh
+ ├── .gitignore
+ ├── Makefile
+
+
+
+```
+
+The project trains and evaluates a Logistic Regression model on the classic Iris dataset, all orchestrated and tracked via ZenML running in a containerized setup.
 
 **Important notes**
 * The ZenML server container image used: `zenmldocker/zenml-server:0.71.0`. See ZenML docs for deploying with Docker. (Docs: https://docs.zenml.io/deploying-zenml/deploy-with-docker). citeturn0search0
