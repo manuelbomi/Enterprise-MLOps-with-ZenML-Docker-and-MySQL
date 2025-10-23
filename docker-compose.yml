@@ -1,0 +1,50 @@
+
+
+services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: zenmlroot
+      MYSQL_DATABASE: zenml
+      MYSQL_USER: zenml
+      MYSQL_PASSWORD: zenmlpass
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  zenml-server:
+    image: zenmldocker/zenml-server:0.71.0
+    environment:
+      ZENML_DATABASE__URL: "mysql+pymysql://zenml:zenmlpass@mysql:3306/zenml"
+      ZENML_SERVER__PUBLIC__HOST: "0.0.0.0"
+      # Use default settings from ZenML image; on first start the server will initialize the DB.
+    depends_on:
+      mysql:
+        condition: service_healthy
+    ports:
+      - "8080:8080"   # ZenML dashboard UI port
+      - "8000:8000"   # ZenML API port (if exposed)
+    volumes:
+      - zenml_data:/zenml_data
+
+  app:
+    build:
+      context: ./app
+    volumes:
+      - ./app:/workspace/app
+    environment:
+      # When you create a service account later, set these in the container and re-run the pipeline.
+      # ZENML_STORE_URL and ZENML_STORE_API_KEY will be suggested by the README and Makefile.
+      TZ: UTC
+    depends_on:
+      - zenml-server
+    tty: true
+    command: ["/bin/bash", "-c", "sleep 2d"]  # Keep container running for interactive use
+
+volumes:
+  mysql_data:
+  zenml_data:
