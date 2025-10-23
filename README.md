@@ -81,7 +81,11 @@ zenml login http://zenml-server:8080
 
 ---
 
-> [NOTE!]
+> [!NOTE]
+> This is a note. It contains information that users should be aware of, even when skimming the text.
+> You can include multiple lines within the note block by starting each new line with an angle bracket ( > ).
+
+> [!NOTE]
 > If the browser link shows something like:
 >
 > *http://zenml-server:8080/devices/verify?device_id=...*
