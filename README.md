@@ -290,6 +290,29 @@ http://localhost:8080
 ```
 
 
+### <ins>4. Centralized Metadata via MySQL</ins>
+
+#### One database for all experiment and pipeline metadata.
+
+##### Why enterprises care:
+
+##### Data scientists, ML engineers, and DevOps need shared visibility.
+
+##### A central SQL database makes metadata accessible for:
+
+- Dashboards (Grafana, Superset)
+
+- Auditing tools
+
+- Internal MLOps analytics
+
+##### The  project feature:
+
+- Uses MySQL as ZenML’s metadata store (instead of the default SQLite).
+
+- Enables multi-user access and scalability.
+
+
 
 
 
