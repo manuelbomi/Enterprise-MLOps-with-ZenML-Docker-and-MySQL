@@ -44,11 +44,11 @@ zenml_demo_project/
 
 ## Step-by-Step Setup and Run Guide
 
-- 1. Clone the Repository
+### 1. Clone the Repository
  
 ```python
-git clone https://github.com/<your-username>/zenml-enterprise-mlops.git
-cd zenml-enterprise-mlops
+git clone https://github.com/manuelbomi/Enterprise-MLOps-with-ZenML-Docker-and-MySQL.git
+cd zenml_mlops_docker_mysql
 
 ```
 
