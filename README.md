@@ -81,8 +81,11 @@ zenml login http://zenml-server:8080
 
 >[NOTE!]
 >If the browser link shows something like:
+>
 > *http://zenml-server:8080/devices/verify?device_id=...*
+>
 >replace zenml-server with localhost, like so:
+>
 >*http://localhost:8080/devices/verify?device_id=...*
 
 
