@@ -169,11 +169,24 @@ http://localhost:8080
 
 #### You will see the iris_training_pipeline run logged, with all steps, artifacts, and metrics.
 
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/ff3b6904-d9d3-4e12-aea9-29fa1b3a7826" />
+
 
 <img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/f13a6079-d3e4-463d-95ed-4d6f1827f001" />
 
 
-<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/ff3b6904-d9d3-4e12-aea9-29fa1b3a7826" />
+### Troubleshooting Guide
+
+| Issue | Fix |
+|-------|-----|
+| Browser can’t open zenml-server | Replace with localhost in the URL. |
+| Pipeline fails to connect to server | Ensure ZenML version in container matches server (`zenml==0.71.0`). |
+| Version mismatch warning | Delete `.zen` and reinitialize with `zenml init`. |
+| Slow data materialization | Install PyArrow: `pip install pyarrow`. |
+| MySQL connection errors | Ensure zenml-db is healthy: `docker ps` → check container logs. |
+
+
+
 
 
 
