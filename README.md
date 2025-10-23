@@ -238,7 +238,7 @@ docker compose up --build
 ```
 
 
-<ins>2. Modular ML Pipelines with ZenML</ins>
+### <ins>2. Modular ML Pipelines with ZenML</ins>
 
 #### A single source of truth for your ML workflow.
 
@@ -257,6 +257,37 @@ docker compose up --build
 - Uses ZenML’s @step and @pipeline decorators to define a DAG-like ML workflow.
 
 - Each step produces trackable artifacts stored in the artifact store.
+
+
+### <ins> 3. Experiment Tracking & Auditability</ins>
+
+##### Know what model, data, and parameters produced every result.
+
+##### Why enterprises care:
+
+##### In regulated industries (finance, healthcare, insurance), reproducibility and auditing are required.
+
+##### ZenML tracks:
+
+- Code version
+
+- Parameters
+
+- Datasets
+
+- Model files
+
+- Accuracy metrics
+
+##### The  project feature:
+
+- Every pipeline run is stored and versioned in ZenML’s database.
+
+- MLOps Engineers and other Devs can visually inspect results in the ZenML dashboard at:
+
+```python
+http://localhost:8080
+```
 
 
 
