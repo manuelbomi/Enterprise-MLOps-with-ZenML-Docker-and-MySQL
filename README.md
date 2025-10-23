@@ -82,10 +82,6 @@ zenml login http://zenml-server:8080
 ---
 
 > [!NOTE]
-> This is a note. It contains information that users should be aware of, even when skimming the text.
-> You can include multiple lines within the note block by starting each new line with an angle bracket ( > ).
-
-> [!NOTE]
 > If the browser link shows something like:
 >
 > *http://zenml-server:8080/devices/verify?device_id=...*
@@ -93,6 +89,54 @@ zenml login http://zenml-server:8080
 > replace zenml-server with localhost, like so:
 >
 > *http://localhost:8080/devices/verify?device_id=...*
+
+#### Once authenticated, you will  see:
+
+```python
+Successfully logged in to http://zenml-server:8080.
+
+```
+
+### 5. Check ZenML Status
+
+```python
+zenml status
+```
+
+#### Expected output:
+```python
+Connected to a remote ZenML server: http://zenml-server:8080
+Server status: available
+Active user: default
+Active stack: default
+```
+
+### 6. (Optional) Register a Local Stack
+
+#### If ZenML complains about missing stacks, re-register one:
+
+```python
+zenml stack register local_server_stack \
+    -o default \
+    -a default
+zenml stack set local_server_stack
+```
+
+### 7. Run the Pipeline
+```python
+python src/pipeline.py
+```
+
+#### You will see logs similar to:
+
+```python
+Connected to ZenML server: http://zenml-server:8080
+Active stack: default
+Model accuracy: 1.0000
+Pipeline run finished successfully!
+
+
+```
 
 
 
