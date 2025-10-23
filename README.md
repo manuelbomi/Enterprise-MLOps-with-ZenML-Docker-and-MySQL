@@ -79,6 +79,8 @@ docker compose exec app bash
 zenml login http://zenml-server:8080
 ```
 
+---
+
 > [NOTE!]
 > If the browser link shows something like:
 >
