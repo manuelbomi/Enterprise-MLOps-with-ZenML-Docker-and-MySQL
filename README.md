@@ -313,6 +313,38 @@ http://localhost:8080
 - Enables multi-user access and scalability.
 
 
+### <ins>5. Orchestrated ML Lifecycle</ins>
+
+##### From raw data → trained model → evaluated metrics.
+
+##### Why enterprises care:
+
+##### A typical ML lifecycle includes:
+
+- Data ingestion & validation
+
+- Feature engineering
+
+- Model training
+
+- Evaluation
+
+- Model deployment
+
+- Monitoring and retraining
+
+####  The project feature:
+
+- Implements the first three (load, train, evaluate).
+
+- It is structured to easily extend:
+
+- Add a deployment step (e.g., to FastAPI, MLflow, or Seldon)
+
+- Add a data validation step (e.g., Great Expectations)
+
+- Integrate a CI/CD trigger (e.g., GitHub Actions)
+
 
 
 
