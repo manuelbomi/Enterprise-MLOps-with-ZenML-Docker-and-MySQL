@@ -75,12 +75,13 @@ docker compose up --build
 docker compose exec app bash
 ```
 
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/ddb5d028-209d-4a89-9b5e-eefd2977b8b7" />
 
 
 <img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/52f521a0-c376-462f-b29c-a21a4a58ce4a" />
 
 
-<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/ddb5d028-209d-4a89-9b5e-eefd2977b8b7" />
+
 
 ### 4. Log in to ZenML Server
 
@@ -89,6 +90,10 @@ zenml login http://zenml-server:8080
 ```
 
 ---
+
+
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/10d57e78-256c-43f3-a565-57d9e9c6b8f7" />
+
 
 > [!NOTE]
 > If the browser link shows something like:
@@ -119,6 +124,12 @@ Server status: available
 Active user: default
 Active stack: default
 ```
+
+
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/522eba9b-9867-4563-8377-7b0c5df44960" />
+
+
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/c4f6bcab-9141-4640-b6b9-9deb2190f016" />
 
 ### 6. (Optional) Register a Local Stack
 
@@ -157,6 +168,12 @@ http://localhost:8080
 ```
 
 #### You will see the iris_training_pipeline run logged, with all steps, artifacts, and metrics.
+
+
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/f13a6079-d3e4-463d-95ed-4d6f1827f001" />
+
+
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/ff3b6904-d9d3-4e12-aea9-29fa1b3a7826" />
 
 
 
