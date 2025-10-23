@@ -40,6 +40,24 @@ zenml_demo_project/
 
 ```
 
+--- 
+
+## Step-by-Step Setup and Run Guide
+
+- 1. Clone the Repository
+ 
+```python
+git clone https://github.com/<your-username>/zenml-enterprise-mlops.git
+cd zenml-enterprise-mlops
+
+```
+
+
+
+
+
+
+
 The project trains and evaluates a Logistic Regression model on the classic Iris dataset, all orchestrated and tracked via ZenML running in a containerized setup.
 
 **Important notes**
