@@ -238,6 +238,27 @@ docker compose up --build
 ```
 
 
+<ins>2. Modular ML Pipelines with ZenML</ins>
+
+#### A single source of truth for your ML workflow.
+
+#### Why enterprises care:
+
+##### ML projects often turn into spaghetti code — data cleaning, training, and evaluation all jumbled.
+
+##### ZenML enforces clean separation between pipeline stages:
+
+- load_data → train_model → evaluate_model
+
+- Each step can be independently tested, versioned, and replaced (e.g., swap logistic regression for XGBoost).
+
+##### The  project feature:
+
+- Uses ZenML’s @step and @pipeline decorators to define a DAG-like ML workflow.
+
+- Each step produces trackable artifacts stored in the artifact store.
+
+
 
 
 
