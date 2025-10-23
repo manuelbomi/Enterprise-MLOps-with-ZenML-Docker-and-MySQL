@@ -240,6 +240,7 @@ docker compose up --build
 
 ---
 
+
 ### <ins>2. Modular ML Pipelines with ZenML</ins>
 
 #### A single source of truth for your ML workflow.
@@ -259,8 +260,10 @@ docker compose up --build
 - Uses ZenML’s @step and @pipeline decorators to define a DAG-like ML workflow.
 
 - Each step produces trackable artifacts stored in the artifact store.
+  
 
 ---
+
 
 ### <ins> 3. Experiment Tracking & Auditability</ins>
 
@@ -287,12 +290,15 @@ docker compose up --build
 - Every pipeline run is stored and versioned in ZenML’s database.
 
 - MLOps Engineers and other Devs can visually inspect results in the ZenML dashboard at:
+  
 
 ```python
 http://localhost:8080
 ```
 
+
 ---
+
 
 ### <ins>4. Centralized Metadata via MySQL</ins>
 
@@ -315,8 +321,10 @@ http://localhost:8080
 - Uses MySQL as ZenML’s metadata store (instead of the default SQLite).
 
 - Enables multi-user access and scalability.
+  
 
 ---
+
 
 ### <ins>5. Orchestrated ML Lifecycle</ins>
 
@@ -349,8 +357,10 @@ http://localhost:8080
 - Add a data validation step (e.g., Great Expectations)
 
 - Integrate a CI/CD trigger (e.g., GitHub Actions)
+  
 
 ---
+
 
 ### <ins>6. Scalability and Cloud Readiness</ins>
 
