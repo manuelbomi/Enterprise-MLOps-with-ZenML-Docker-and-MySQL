@@ -94,6 +94,7 @@ zenml login http://zenml-server:8080
 
 <img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/10d57e78-256c-43f3-a565-57d9e9c6b8f7" />
 
+---
 
 > [!NOTE]
 > If the browser link shows something like:
@@ -103,6 +104,8 @@ zenml login http://zenml-server:8080
 > replace zenml-server with localhost, like so:
 >
 > *http://localhost:8080/devices/verify?device_id=...*
+
+---
 
 #### Once authenticated, you will  see:
 
@@ -174,6 +177,7 @@ http://localhost:8080
 
 <img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/f13a6079-d3e4-463d-95ed-4d6f1827f001" />
 
+---
 
 ### Troubleshooting Guide
 
