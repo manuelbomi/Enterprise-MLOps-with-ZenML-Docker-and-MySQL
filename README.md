@@ -53,6 +53,41 @@ cd zenml_mlops_docker_mysql
 ```
 
 
+### 2. Build and Start the Docker Containers
+```python
+docker compose up --build
+```
+
+#### This spins up:
+
+- A ZenML server on port 8080
+
+- A MySQL database on port 3306
+
+- Your app container with all dependencies installed
+
+
+### 3. Enter the Application Container
+
+```python
+docker compose exec app bash
+```
+
+### 4. Log in to ZenML Server
+
+```python
+zenml login http://zenml-server:8080
+```
+
+>[NOTE!]
+>If the browser link shows something like:
+> *http://zenml-server:8080/devices/verify?device_id=...*
+>replace zenml-server with localhost, like so:
+>*http://localhost:8080/devices/verify?device_id=...*
+
+
+
+
 
 
 
