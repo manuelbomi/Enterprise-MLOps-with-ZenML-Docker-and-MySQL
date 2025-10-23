@@ -75,6 +75,13 @@ docker compose up --build
 docker compose exec app bash
 ```
 
+
+
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/52f521a0-c376-462f-b29c-a21a4a58ce4a" />
+
+
+<img width="1280" height="720" alt="Image" src="https://github.com/user-attachments/assets/ddb5d028-209d-4a89-9b5e-eefd2977b8b7" />
+
 ### 4. Log in to ZenML Server
 
 ```python
@@ -139,6 +146,27 @@ Pipeline run finished successfully!
 
 
 ```
+
+
+### 8. View Pipeline Runs in the Dashboard
+
+#### Open:
+
+```python
+http://localhost:8080
+```
+
+#### You will see the iris_training_pipeline run logged, with all steps, artifacts, and metrics.
+
+
+
+
+
+
+
+
+
+
 
 
 
