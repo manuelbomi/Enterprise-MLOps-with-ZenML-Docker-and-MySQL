@@ -202,7 +202,8 @@ http://localhost:8080
 
 ## Why This Project Matters for Enterprise & MLOps
 
-#### This project isn’t just “running an ML model.”
+
+#### This project is not just about “running an ML model.”
 
 #### It is essentailly a modular, containerized, and trackable ML pipeline — exactly what enterprise teams need to move machine learning from research notebooks to production.
 
@@ -237,6 +238,7 @@ http://localhost:8080
 docker compose up --build
 ```
 
+---
 
 ### <ins>2. Modular ML Pipelines with ZenML</ins>
 
@@ -258,6 +260,7 @@ docker compose up --build
 
 - Each step produces trackable artifacts stored in the artifact store.
 
+---
 
 ### <ins> 3. Experiment Tracking & Auditability</ins>
 
@@ -289,6 +292,7 @@ docker compose up --build
 http://localhost:8080
 ```
 
+---
 
 ### <ins>4. Centralized Metadata via MySQL</ins>
 
@@ -312,6 +316,7 @@ http://localhost:8080
 
 - Enables multi-user access and scalability.
 
+---
 
 ### <ins>5. Orchestrated ML Lifecycle</ins>
 
@@ -344,6 +349,43 @@ http://localhost:8080
 - Add a data validation step (e.g., Great Expectations)
 
 - Integrate a CI/CD trigger (e.g., GitHub Actions)
+
+---
+
+### <ins>6. Scalability and Cloud Readiness</ins>
+
+##### Your team may decide to deploy the same stack on Kubernetes, AWS, or GCP.
+
+##### Why enterprises care:
+
+##### Companies often start local, but scale pipelines in the cloud.
+
+##### ZenML integrates with:
+
+- Kubeflow, Airflow, or Prefect (for orchestration)
+
+- S3, GCS, Azure Blob (for artifact stores)
+
+- MLflow or Weights & Biases (for experiment tracking)
+
+
+##### The project feature:
+
+- Built using ZenML’s pluggable stack concept.
+
+- You can swap out local components for cloud ones — no code rewrite needed.
+
+<ins>Example</ins>:
+
+```python
+zenml stack register aws_stack \
+    -o kubeflow_orchestrator \
+    -a s3_artifact_store \
+    -m mlflow_experiment_tracker
+zenml stack set aws_stack
+```
+
+---  
 
 
 
