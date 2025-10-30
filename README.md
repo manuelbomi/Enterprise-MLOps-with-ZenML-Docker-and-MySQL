@@ -12,7 +12,7 @@
 
 -  MySQL as ZenML’s metadata store
 
-- Scikit-learn for model training and evaluation
+- Scikit-learn for model training and evaluatio
 
 - Pandas for data handling
 
