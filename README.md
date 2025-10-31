@@ -8,11 +8,11 @@
 
 - Docker for reproducible environments
 
-- ZenML for pipeline orchestration and experiment tracking
+- ZenML for pipeline orchestratoin and experiment tracking
 
 -  MySQL as ZenML’s metadata store
 
-- Scikit-learn for model training and evaluatio
+- Scikit-learn for model training and evaluation
 
 - Pandas for data handling
 
